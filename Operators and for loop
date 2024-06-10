@@ -1,1 +1,18 @@
+REVERSE NUMBERS
+Problem statement:-
+Write a program to generate the reverse of a given number N. Print the corresponding reverse number.
+Solution:-
+#include<iostream>
+using namespace std;
 
+int main() {
+	int n;
+	int rev_num = 0;
+	cin >>n;
+	while(n!=0){
+		rev_num = rev_num*10 + n%10;
+		n = n/10;
+	}
+	cout << rev_num;
+	
+}
